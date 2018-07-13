@@ -1,0 +1,19 @@
+<form name="contactform" method="POST" action="/wp-content/themes/peak/send_form.php">
+
+    <input type="hidden" name="form_name" value="Contact" />
+
+    <label for="first_name">*Name</label>
+    <input type="text" id="name" name="name" maxlength="50" placeholder="Name" required="required">
+
+    <label for="email">*Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" maxlength="80" required="required">
+    
+    <label for="last_name">Subject</label>
+    <input type="text" id="subject" name="subject" maxlength="50" placeholder="Subject">
+
+    <label for="comments">Message</label>
+    <textarea id="message" name="message" placeholder="Message" style="height:200px" maxlength="1000" required="required"></textarea>
+
+    <input type="submit" value="Submit">
+
+</form>
